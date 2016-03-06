@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cateGory" id="KGk-i7-Jjw" customClass="WRXCategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Avu-zD-7iK" userLabel="指示器View">
+                        <rect key="frame" x="0.0" y="0.0" width="4" height="43.5"/>
+                        <color key="backgroundColor" red="0.98823535439999999" green="0.062745101750000004" blue="0.270588249" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="4" id="jor-mL-RGs"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kez-2g-TUq" userLabel="分割线View">
+                        <rect key="frame" x="1" y="43" width="249" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Yuj-Wf-eSW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Avu-zD-7iK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="28K-zK-6B0"/>
+                    <constraint firstAttribute="bottom" secondItem="Avu-zD-7iK" secondAttribute="bottom" id="3fT-FQ-VK4"/>
+                    <constraint firstAttribute="bottom" secondItem="kez-2g-TUq" secondAttribute="bottom" id="GfO-3g-FVe"/>
+                    <constraint firstAttribute="trailing" secondItem="kez-2g-TUq" secondAttribute="trailing" id="S3b-dB-nAu"/>
+                    <constraint firstItem="kez-2g-TUq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-7" id="npH-8C-Shb"/>
+                    <constraint firstItem="Avu-zD-7iK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yQs-QW-K9w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="indicatorView" destination="Avu-zD-7iK" id="eOG-Cl-vf5"/>
+                <outlet property="separatorView" destination="kez-2g-TUq" id="rVt-hJ-PCu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
